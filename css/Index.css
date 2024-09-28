@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+
+/*body: cuerpo de la página*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-areas:
+        "top"
+        "nav"
+        "main  "
+        "footer"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+main {
+    grid-area: main;
+}
+
+#imagen-principal {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/extra/img/Banyan-Tree-Vabbinfaru_Malediven.jpg);
+    position: relative;
+}
+
+#imagen-principal .info {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    & p {
+        margin-bottom: 400px;
+        color: transparent;
+        /* Make the text transparent */
+        font-size: 14rem;
+        /* Increase font size slightly */
+        font-weight: 900;
+        /* Make the text thicker */
+        -webkit-text-stroke: 4px solid #09f;
+        /* Increase stroke width to make text thicker */
+        -webkit-text-fill-color: transparent;
+        /* Make the text fill color transparent */
+        background: -webkit-linear-gradient(rgba(238, 214, 0, 0.5), rgba(118, 143, 224, 0.5));
+        /* Add a semi-transparent background to the text */
+        -webkit-background-clip: text;
+        background-clip: text;
+        /* Clip the background to the text */
+    }
+}
+
+/*cabecera*/
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    grid-area: top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    margin-left: 1rem;
+    width: 80px;
+    border-radius: 100px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#iconos {
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+/*navegador*/
+nav {
+    width: 100%;
+    background-color: #333;
+    min-height: 2em;
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: sticky;
+    top: 10px;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: #0884f8;
+    margin: 0.3em;
+    transform: scale(1.2);
+
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: none;
+    color: #9bf5ff;
+}
+
+/*pie de página:footer*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    grid-area: footer;
+}
+
+footer h1 {
+    text-align: center;
+    font-size: 1.4em;
+    color: rgb(46, 116, 247);
+    padding: 0.7em;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 1em;
+    padding: 0.4em;
+}
+
+footer a {
+    text-decoration: none;
+    color: green;
+}
