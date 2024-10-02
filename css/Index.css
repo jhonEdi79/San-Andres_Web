@@ -41,7 +41,7 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
 
     & p {
-        margin-bottom: 400px;
+        margin-bottom: 300px;
         color: transparent;
         /* Make the text transparent */
         font-size: 14rem;

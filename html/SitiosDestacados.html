@@ -1,43 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia de [Country/Entity]</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/SitiosDesatacados.css">
 </head>
 <body>
-    <header>
-        <img src="flag.png" alt="Bandera de [Country/Entity]">
-        <img src="coat_of_arms.png" alt="Escudo de [Country/Entity]">
-    </header>
-    <section class="hero">
-        <h1>Historia de [Country/Entity]</h1>
-        <p>Breve introducción a la historia del país/entidad</p>
-        <img src="/extra/_8fe26dc6-8f96-4c7a-b0a7-7892b089825a.jfif" alt="Imagen de fondo">
+    <nav>
+        <div>
+            <md-filled-tonal-button onclick="navegarAIndex();">
+                Menu Principal
+                <svg slot="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M4 21V9l8-6l8 6v12h-6v-7h-4v7z" />
+                </svg>
+            </md-filled-tonal-button>
+        </div>
+    </nav>
+    <section>
+        <div class="contenedor-principal">
+            <div class="imagenes">
+                <h4>Johnny Cay</h4>
+                <img src="https://viajasanandres.com/wp-content/uploads/2019/11/Johnny-Cay.jpg" alt="">
+                <p>Johnny Cay, también conocido localmente como Islote Sucre, es el cayo más grande e importante cercano
+                    a la Isla de San Andrés. Tal es su importancia que se nombró como Parque Regional protegido, gracias
+                    a su biodiversidad y belleza. Es un paraíso que todo turista debe conocer en el archipiélago</p>
+            </div>
+            <div class="imagenes">
+                <h4>El Acuario</h4>
+                <img src="https://viajasanandres.com/wp-content/uploads/2019/11/acuario-san-andres.jpg" alt="">
+                <p>El Acuario de San Andrés es otra de esas visitas imprescindibles en el archipiélago. En este pequeño
+                    islote prepárate para disfrutar de la vista de peces de colores alrededor de tus pies sin necesidad
+                    de adentrarte en el mar profundo y de los hermosos tonos del paisaje. Toda una maravilla para los
+                    sentidos.</p>
+            </div>
+            <div class="imagenes">
+                <h4>Hoyo Soplador</h4>
+                <img src="https://viajasanandres.com/wp-content/uploads/2019/11/hoyo-soplador-san-andres.jpg" alt="">
+                <p>El Hoyo Soplador es una de las curiosidades de San Andrés que más llaman la atención del turismo en
+                    la isla. Un fenómeno de la naturaleza diseñado para sorprender y divertir a los que se deciden a
+                    pararse frente a él y a los que simplemente miran a los demás ser sacudidos por la ráfaga.</p>
+            </div>
+            <div class="imagenes">
+                <h4>Playa Spratt Bight</h4>
+                <img src="https://viajasanandres.com/wp-content/uploads/2019/10/spratt-bight.jpg" alt="">
+                <p>Spratt Bight es la playa más reconocida de San Andrés gracias a su excelente localización y a todo el
+                    comercio y turismo que se ha generado a su alrededor. Con casi 500 metros de extensión es una visita
+                    imprescindible para todos los que llegan a la isla buscando disfrutar del ambiente caribeño.</p>
+            </div>
+            <div class="imagenes">
+                <h4>La Piscinita</h4>
+                <img src="https://viajasanandres.com/wp-content/uploads/2019/11/la-piscinita-san-andres.jpg" alt="">
+                <p>El balneario natural La Piscinita es uno de los sitios turísticos más famosos de la isla. La
+                    naturaleza decidió moldear este imponente espacio hasta convertirlo en una piscina natural que, a
+                    pesar de ser profunda, es totalmente cristalina y es posible visualizar desde los corales hasta los
+                    animales marinos que lo habitan.</p>
+            </div>
+            <div class="imagenes">
+                <h4>Cayo Bolívar</h4>
+                <img src="https://viajasanandres.com/wp-content/uploads/2019/11/cayo-bolivar.jpg" alt="">
+                <p>Cayo Bolívar es sinónimo de belleza salvaje en pleno Caribe colombiano. Este cayo a diferencia del
+                    resto es mucho menos frecuentado por las masas y cuenta con zonas completamente inhabitadas ni
+                    afectadas por el ser humano. Si buscas tranquilidad y naturaleza pura, esta es una visita imperdible
+                    para ti.</p>
+            </div>
+            <div class="imagenes">
+                <h4>Rocky Cay</h4>
+                <img src="https://viajasanandres.com/wp-content/uploads/2019/11/rocky-cay.jpg" alt="">
+                <p>Rocky Cay, o Cayo Rocoso en español, es otro de los sitios de interés más visitados de San Andrés. Su
+                    principal atractivo es que, a diferencia de los demás islotes cercanos, el suelo está compuesto por
+                    rocas, menos arena. Así ofrece piscinas naturales de agua cristalina para que te relajes como nunca.
+                </p>
+            </div>
+            <div class="imagenes">
+                <h4>Iglesia Bautista Emmanuel</h4>
+                <img src="https://viajasanandres.com/wp-content/uploads/2019/11/iglesia-bautista-san-andres.jpg" alt="">
+                <p>La Primera Iglesia Bautista «Emmanuel» es una parada obligada para todas aquellas personas que deseen
+                    conocer un poco más sobre la cultura e historia de la Isla de San Andrés. Esta icónica Iglesia está
+                    hecha en su totalidad de madera de pino y construida por partes en Alabama, Estados Unidos y luego
+                    ensamblada en la parte más alta de la isla, conocida como La Loma.</p>
+            </div>
+            <div class="imagenes">
+                <h4>Cueva de Morgan</h4>
+                <img src="https://viajasanandres.com/wp-content/uploads/2019/11/cueva-morgan.jpg" alt="">
+                <p>Una de las atracciones más mencionadas de San Andrés es esta curiosa cueva que encierra la historia
+                    de uno de los personajes más llamativos de los mares, el pirata Morgan. Sigue leyendo para descubrir
+                    lo que puedes encontrar en este rincón escondido.</p>
+            </div>
+            <div class="imagenes">
+                <h4>El Parque Ecológico</h4>
+                <img src="https://viajasanandres.com/wp-content/uploads/2019/11/parque-ecologico.jpg" alt="">
+                <p>El parque ecológico es uno de esos lugares por los que todos pasan pero no todos entran. En realidad
+                    está ubicado en una de las zonas más transitadas por el turismo en San Andrés y cuenta con una de
+                    las principales atracciones para los amantes de las fotografías para inmortalizar el viaje. Sigue
+                    leyendo y descubre.</p>
+            </div>
+        </div>
     </section>
-    <section class="timeline">
-        <h2>Cronología de eventos importantes</h2>
-        <ul>
-            <li>
-                <img src="event1_image.jpg" alt="Imagen del evento 1">
-                <p>Evento 1: [Breve descripción]</p>
-            </li>
-            <li>
-                <img src="event2_image.jpg" alt="Imagen del evento 2">
-                <p>Evento 2: [Breve descripción]</p>
-            </li>
-            <!-- Add more list items for each event -->
-        </ul>
-    </section>
-    <section class="music">
-        <h2>Música de [Country/Entity]</h2>
-        <audio src="national_anthem.mp3" controls></audio>
-        <!-- or -->
-        <p>Escucha la música de [Country/Entity] en <a href="https://music-platform.com">esta plataforma</a></p>
-    </section>
-    <footer>
-        <p>Descripción breve y/o enlace a una página de historia más detallada</p>
-    </footer>
+    <script type="importmap">
+        {
+            "imports": {
+                "@material/web/": "https://esm.run/@material/web/"
+            }
+        }
+    </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+    <script src="/javascript/sitiosDestacados.js"></script>
 </body>
 </html>
